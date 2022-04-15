@@ -1,0 +1,8 @@
+prefix=/home/harlab/ros_ws_1/devel
+
+Name: sense_glove_test
+Description: Description of sense_glove_test
+Version: 0.0.0
+Cflags: -I/home/harlab/ros_ws_1/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

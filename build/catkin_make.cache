@@ -1,0 +1,2 @@
+beginner_tutorials:sense_glove_test:srl_final
+-DCATKIN_DEVEL_PREFIX=/home/harlab/ros_ws_1/devel -DCMAKE_INSTALL_PREFIX=/home/harlab/ros_ws_1/install -G Unix Makefiles

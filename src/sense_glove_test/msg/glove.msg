@@ -1,0 +1,3 @@
+uint8 finger
+uint8 vibration_amplitude
+uint8 vibration_duration

@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/SGConnect_TestProgram.dir/sense_glove_test/src/SGConnect_TestProgram.cpp.o CMakeFiles/SGConnect_TestProgram.dir/beginner_tutorials/src/sub_test_1.cpp.o  -o SGConnect_TestProgram  -Wl,-rpath,/home/harlab/ros_ws_1/src/sense_glove_test/include /home/harlab/ros_ws_1/src/sense_glove_test/include/libSGConnect.so 

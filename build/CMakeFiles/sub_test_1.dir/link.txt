@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/sub_test_1.dir/beginner_tutorials/src/sub_test_1.cpp.o  -o sub_test_1 
