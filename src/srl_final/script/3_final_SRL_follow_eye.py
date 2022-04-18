@@ -20,7 +20,6 @@
             得到T_trans，使得T265_srl = T_Trans * T265_e
             节点：/cam1_cam2/trans_tf
             数据类型：Float32MultiArray
-
 '''
 
 import rospy
