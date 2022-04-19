@@ -14,10 +14,24 @@ find_package(catkin REQUIRED COMPONENTS
     message_generation
 )
 
-generate_messages(
-    DEPENDENCIES
-    std_msgs
-)
+#generate_messages(
+#    DEPENDENCIES
+#    std_msgs
+#)
+
+
+catkin_package()
+
+include_directories(include ${catkin_INCLUDE_DIRS} )
+# include_directories(/home/harlab/ros_ws_1/src/sense_glove_test/include/sense_glove_test)
+
+# set(LIB_DIR_CONNECT /home/harlab/ros_ws_1/src/sense_glove_test/include/libSGCoreCpp.so)
+
+add_executable(2_final_trans_all src/2_final_trans_all.cpp)
+# target_link_libraries(2_final_trans_all ${catkin_INCLUDE_DIRS})
+target_link_libraries(2_final_trans_all ${catkin_LIBRARIES})
+# add_dependencies(2_final_trans_all sense_glove_test_generate_messages_cpp)
+
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
 
@@ -107,23 +121,12 @@ generate_messages(
 ## LIBRARIES: libraries you create in this project that dependent projects also need
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
-catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES srl_final
-#  CATKIN_DEPENDS roscpp rospy std_msgs
-#  DEPENDS system_lib
-)
+
 
 ###########
 ## Build ##
 ###########
 
-## Specify additional locations of header files
-## Your package locations should be listed before other locations
-include_directories(
-# include
-  ${catkin_INCLUDE_DIRS}
-)
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}

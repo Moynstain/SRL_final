@@ -45,6 +45,10 @@ target_link_libraries(glove_sub_test_3 ${LIB_DIR_CONNECT})
 add_dependencies(glove_sub_test_3 sense_glove_test_generate_messages_cpp)
 
 
+add_executable(grammer_test src/grammer_test.cpp)
+target_link_libraries(grammer_test ${catkin_LIBRARIES})
+target_link_libraries(grammer_test ${LIB_DIR_CONNECT})
+add_dependencies(grammer_test sense_glove_test_generate_messages_cpp)
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
 

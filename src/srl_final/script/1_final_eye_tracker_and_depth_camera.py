@@ -18,7 +18,6 @@
 import rospy
 import cv2
 import time
-import sys
 import message_filters  # 同步订阅消息
 import utils  # 贶恩写的utils，主要用于处理眼动仪与深度相机数据
 import json  # 眼动仪与深度相机之间的变换矩阵
