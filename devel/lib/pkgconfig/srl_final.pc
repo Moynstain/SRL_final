@@ -3,6 +3,6 @@ prefix=/home/harlab/ros_ws_1/devel
 Name: srl_final
 Description: Description of srl_final
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/harlab/ros_ws_1/devel/include
 Libs: -L${prefix}/lib 
 Requires: 

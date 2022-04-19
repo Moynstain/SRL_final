@@ -14,24 +14,35 @@ find_package(catkin REQUIRED COMPONENTS
     message_generation
 )
 
-#generate_messages(
-#    DEPENDENCIES
-#    std_msgs
-#)
+add_message_files(
+        FILES
+        glove.msg
+)
+
+generate_messages(
+    DEPENDENCIES
+    std_msgs
+)
 
 
 catkin_package()
 
 include_directories(include ${catkin_INCLUDE_DIRS} )
+include_directories(include /usr/include/eigen3/Eigen/src/Core)
 # include_directories(/home/harlab/ros_ws_1/src/sense_glove_test/include/sense_glove_test)
 
 # set(LIB_DIR_CONNECT /home/harlab/ros_ws_1/src/sense_glove_test/include/libSGCoreCpp.so)
 
 add_executable(2_final_trans_all src/2_final_trans_all.cpp)
-# target_link_libraries(2_final_trans_all ${catkin_INCLUDE_DIRS})
+target_link_libraries(grammer_test ${LIB_DIR_CONNECT})
 target_link_libraries(2_final_trans_all ${catkin_LIBRARIES})
-# add_dependencies(2_final_trans_all sense_glove_test_generate_messages_cpp)
+add_dependencies(2_final_trans_all srl_final_generate_messages_cpp)
 
+
+#add_executable(grammer_test src/grammer_test.cpp)
+#target_link_libraries(grammer_test ${catkin_LIBRARIES})
+#target_link_libraries(grammer_test ${LIB_DIR_CONNECT})
+#add_dependencies(grammer_test sense_glove_test_generate_messages_cpp)
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
 

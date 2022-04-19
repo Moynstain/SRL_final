@@ -844,6 +844,19 @@ sense_glove_test_genpy/fast:
 .PHONY : sense_glove_test_genpy/fast
 
 #=============================================================================
+# Target rules for targets named grammer_test
+
+# Build rule for target.
+grammer_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 grammer_test
+.PHONY : grammer_test
+
+# fast build rule for target.
+grammer_test/fast:
+	$(MAKE) -f sense_glove_test/CMakeFiles/grammer_test.dir/build.make sense_glove_test/CMakeFiles/grammer_test.dir/build
+.PHONY : grammer_test/fast
+
+#=============================================================================
 # Target rules for targets named glove_sub_test_1
 
 # Build rule for target.
@@ -894,6 +907,19 @@ srl_final_generate_messages: cmake_check_build_system
 srl_final_generate_messages/fast:
 	$(MAKE) -f srl_final/CMakeFiles/srl_final_generate_messages.dir/build.make srl_final/CMakeFiles/srl_final_generate_messages.dir/build
 .PHONY : srl_final_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named _srl_final_generate_messages_check_deps_glove
+
+# Build rule for target.
+_srl_final_generate_messages_check_deps_glove: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _srl_final_generate_messages_check_deps_glove
+.PHONY : _srl_final_generate_messages_check_deps_glove
+
+# fast build rule for target.
+_srl_final_generate_messages_check_deps_glove/fast:
+	$(MAKE) -f srl_final/CMakeFiles/_srl_final_generate_messages_check_deps_glove.dir/build.make srl_final/CMakeFiles/_srl_final_generate_messages_check_deps_glove.dir/build
+.PHONY : _srl_final_generate_messages_check_deps_glove/fast
 
 #=============================================================================
 # Target rules for targets named srl_final_generate_messages_cpp
@@ -985,6 +1011,19 @@ srl_final_gennodejs: cmake_check_build_system
 srl_final_gennodejs/fast:
 	$(MAKE) -f srl_final/CMakeFiles/srl_final_gennodejs.dir/build.make srl_final/CMakeFiles/srl_final_gennodejs.dir/build
 .PHONY : srl_final_gennodejs/fast
+
+#=============================================================================
+# Target rules for targets named 2_final_trans_all
+
+# Build rule for target.
+2_final_trans_all: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 2_final_trans_all
+.PHONY : 2_final_trans_all
+
+# fast build rule for target.
+2_final_trans_all/fast:
+	$(MAKE) -f srl_final/CMakeFiles/2_final_trans_all.dir/build.make srl_final/CMakeFiles/2_final_trans_all.dir/build
+.PHONY : 2_final_trans_all/fast
 
 #=============================================================================
 # Target rules for targets named srl_final_gencpp
@@ -1090,10 +1129,12 @@ help:
 	@echo "... sense_glove_test_generate_messages_nodejs"
 	@echo "... sense_glove_test_generate_messages_py"
 	@echo "... sense_glove_test_genpy"
+	@echo "... grammer_test"
 	@echo "... glove_sub_test_1"
 	@echo "... sense_glove_test_generate_messages_eus"
 	@echo "... glove_pub_test_1"
 	@echo "... srl_final_generate_messages"
+	@echo "... _srl_final_generate_messages_check_deps_glove"
 	@echo "... srl_final_generate_messages_cpp"
 	@echo "... srl_final_generate_messages_lisp"
 	@echo "... srl_final_generate_messages_eus"
@@ -1101,6 +1142,7 @@ help:
 	@echo "... srl_final_genlisp"
 	@echo "... srl_final_generate_messages_nodejs"
 	@echo "... srl_final_gennodejs"
+	@echo "... 2_final_trans_all"
 	@echo "... srl_final_gencpp"
 	@echo "... srl_final_generate_messages_py"
 	@echo "... srl_final_genpy"

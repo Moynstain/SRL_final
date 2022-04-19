@@ -363,6 +363,21 @@ sense_glove_test_genpy/fast:
 .PHONY : sense_glove_test_genpy/fast
 
 # Convenience name for target.
+sense_glove_test/CMakeFiles/grammer_test.dir/rule:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f CMakeFiles/Makefile2 sense_glove_test/CMakeFiles/grammer_test.dir/rule
+.PHONY : sense_glove_test/CMakeFiles/grammer_test.dir/rule
+
+# Convenience name for target.
+grammer_test: sense_glove_test/CMakeFiles/grammer_test.dir/rule
+
+.PHONY : grammer_test
+
+# fast build rule for target.
+grammer_test/fast:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f sense_glove_test/CMakeFiles/grammer_test.dir/build.make sense_glove_test/CMakeFiles/grammer_test.dir/build
+.PHONY : grammer_test/fast
+
+# Convenience name for target.
 sense_glove_test/CMakeFiles/glove_sub_test_1.dir/rule:
 	cd /home/harlab/ros_ws_1/build && $(MAKE) -f CMakeFiles/Makefile2 sense_glove_test/CMakeFiles/glove_sub_test_1.dir/rule
 .PHONY : sense_glove_test/CMakeFiles/glove_sub_test_1.dir/rule
@@ -515,6 +530,33 @@ src/glove_sub_test_3.cpp.s:
 	cd /home/harlab/ros_ws_1/build && $(MAKE) -f sense_glove_test/CMakeFiles/glove_sub_test_3.dir/build.make sense_glove_test/CMakeFiles/glove_sub_test_3.dir/src/glove_sub_test_3.cpp.s
 .PHONY : src/glove_sub_test_3.cpp.s
 
+src/grammer_test.o: src/grammer_test.cpp.o
+
+.PHONY : src/grammer_test.o
+
+# target to build an object file
+src/grammer_test.cpp.o:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f sense_glove_test/CMakeFiles/grammer_test.dir/build.make sense_glove_test/CMakeFiles/grammer_test.dir/src/grammer_test.cpp.o
+.PHONY : src/grammer_test.cpp.o
+
+src/grammer_test.i: src/grammer_test.cpp.i
+
+.PHONY : src/grammer_test.i
+
+# target to preprocess a source file
+src/grammer_test.cpp.i:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f sense_glove_test/CMakeFiles/grammer_test.dir/build.make sense_glove_test/CMakeFiles/grammer_test.dir/src/grammer_test.cpp.i
+.PHONY : src/grammer_test.cpp.i
+
+src/grammer_test.s: src/grammer_test.cpp.s
+
+.PHONY : src/grammer_test.s
+
+# target to generate assembly for a file
+src/grammer_test.cpp.s:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f sense_glove_test/CMakeFiles/grammer_test.dir/build.make sense_glove_test/CMakeFiles/grammer_test.dir/src/grammer_test.cpp.s
+.PHONY : src/grammer_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -541,6 +583,7 @@ help:
 	@echo "... sense_glove_test_generate_messages_nodejs"
 	@echo "... sense_glove_test_generate_messages_py"
 	@echo "... sense_glove_test_genpy"
+	@echo "... grammer_test"
 	@echo "... glove_sub_test_1"
 	@echo "... sense_glove_test_generate_messages_eus"
 	@echo "... glove_pub_test_1"
@@ -556,6 +599,9 @@ help:
 	@echo "... src/glove_sub_test_3.o"
 	@echo "... src/glove_sub_test_3.i"
 	@echo "... src/glove_sub_test_3.s"
+	@echo "... src/grammer_test.o"
+	@echo "... src/grammer_test.i"
+	@echo "... src/grammer_test.s"
 .PHONY : help
 
 
