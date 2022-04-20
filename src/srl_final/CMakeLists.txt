@@ -12,11 +12,12 @@ find_package(catkin REQUIRED COMPONENTS
     rospy
     std_msgs
     message_generation
+    message_filters
 )
 
 add_message_files(
-        FILES
-        glove.msg
+    FILES
+    glove.msg
 )
 
 generate_messages(
@@ -34,10 +35,20 @@ include_directories(include /usr/include/eigen3/Eigen/src/Core)
 # set(LIB_DIR_CONNECT /home/harlab/ros_ws_1/src/sense_glove_test/include/libSGCoreCpp.so)
 
 add_executable(2_final_trans_all src/2_final_trans_all.cpp)
-target_link_libraries(grammer_test ${LIB_DIR_CONNECT})
+target_link_libraries(2_final_trans_all ${LIB_DIR_CONNECT})
 target_link_libraries(2_final_trans_all ${catkin_LIBRARIES})
 add_dependencies(2_final_trans_all srl_final_generate_messages_cpp)
 
+
+add_executable(2_final_trans_all_backup src/2_final_trans_all_backup.cpp)
+target_link_libraries(2_final_trans_all_backup ${LIB_DIR_CONNECT})
+target_link_libraries(2_final_trans_all_backup ${catkin_LIBRARIES})
+add_dependencies(2_final_trans_all_backup srl_final_generate_messages_cpp)
+
+add_executable(group_discussion_demo src/group_discussion_demo.cpp)
+target_link_libraries(group_discussion_demo ${LIB_DIR_CONNECT})
+target_link_libraries(group_discussion_demo ${catkin_LIBRARIES})
+add_dependencies(group_discussion_demo srl_final_generate_messages_cpp)
 
 #add_executable(grammer_test src/grammer_test.cpp)
 #target_link_libraries(grammer_test ${catkin_LIBRARIES})

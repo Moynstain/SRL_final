@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+srl_final/CMakeFiles/group_discussion_demo.dir/rule:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f CMakeFiles/Makefile2 srl_final/CMakeFiles/group_discussion_demo.dir/rule
+.PHONY : srl_final/CMakeFiles/group_discussion_demo.dir/rule
+
+# Convenience name for target.
+group_discussion_demo: srl_final/CMakeFiles/group_discussion_demo.dir/rule
+
+.PHONY : group_discussion_demo
+
+# fast build rule for target.
+group_discussion_demo/fast:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_demo.dir/build.make srl_final/CMakeFiles/group_discussion_demo.dir/build
+.PHONY : group_discussion_demo/fast
+
+# Convenience name for target.
 srl_final/CMakeFiles/srl_final_generate_messages.dir/rule:
 	cd /home/harlab/ros_ws_1/build && $(MAKE) -f CMakeFiles/Makefile2 srl_final/CMakeFiles/srl_final_generate_messages.dir/rule
 .PHONY : srl_final/CMakeFiles/srl_final_generate_messages.dir/rule
@@ -256,6 +271,21 @@ srl_final_geneus: srl_final/CMakeFiles/srl_final_geneus.dir/rule
 srl_final_geneus/fast:
 	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/srl_final_geneus.dir/build.make srl_final/CMakeFiles/srl_final_geneus.dir/build
 .PHONY : srl_final_geneus/fast
+
+# Convenience name for target.
+srl_final/CMakeFiles/2_final_trans_all_backup.dir/rule:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f CMakeFiles/Makefile2 srl_final/CMakeFiles/2_final_trans_all_backup.dir/rule
+.PHONY : srl_final/CMakeFiles/2_final_trans_all_backup.dir/rule
+
+# Convenience name for target.
+2_final_trans_all_backup: srl_final/CMakeFiles/2_final_trans_all_backup.dir/rule
+
+.PHONY : 2_final_trans_all_backup
+
+# fast build rule for target.
+2_final_trans_all_backup/fast:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/2_final_trans_all_backup.dir/build.make srl_final/CMakeFiles/2_final_trans_all_backup.dir/build
+.PHONY : 2_final_trans_all_backup/fast
 
 # Convenience name for target.
 srl_final/CMakeFiles/srl_final_genlisp.dir/rule:
@@ -389,6 +419,60 @@ src/2_final_trans_all.cpp.s:
 	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/2_final_trans_all.dir/build.make srl_final/CMakeFiles/2_final_trans_all.dir/src/2_final_trans_all.cpp.s
 .PHONY : src/2_final_trans_all.cpp.s
 
+src/2_final_trans_all_backup.o: src/2_final_trans_all_backup.cpp.o
+
+.PHONY : src/2_final_trans_all_backup.o
+
+# target to build an object file
+src/2_final_trans_all_backup.cpp.o:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/2_final_trans_all_backup.dir/build.make srl_final/CMakeFiles/2_final_trans_all_backup.dir/src/2_final_trans_all_backup.cpp.o
+.PHONY : src/2_final_trans_all_backup.cpp.o
+
+src/2_final_trans_all_backup.i: src/2_final_trans_all_backup.cpp.i
+
+.PHONY : src/2_final_trans_all_backup.i
+
+# target to preprocess a source file
+src/2_final_trans_all_backup.cpp.i:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/2_final_trans_all_backup.dir/build.make srl_final/CMakeFiles/2_final_trans_all_backup.dir/src/2_final_trans_all_backup.cpp.i
+.PHONY : src/2_final_trans_all_backup.cpp.i
+
+src/2_final_trans_all_backup.s: src/2_final_trans_all_backup.cpp.s
+
+.PHONY : src/2_final_trans_all_backup.s
+
+# target to generate assembly for a file
+src/2_final_trans_all_backup.cpp.s:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/2_final_trans_all_backup.dir/build.make srl_final/CMakeFiles/2_final_trans_all_backup.dir/src/2_final_trans_all_backup.cpp.s
+.PHONY : src/2_final_trans_all_backup.cpp.s
+
+src/group_discussion_demo.o: src/group_discussion_demo.cpp.o
+
+.PHONY : src/group_discussion_demo.o
+
+# target to build an object file
+src/group_discussion_demo.cpp.o:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_demo.dir/build.make srl_final/CMakeFiles/group_discussion_demo.dir/src/group_discussion_demo.cpp.o
+.PHONY : src/group_discussion_demo.cpp.o
+
+src/group_discussion_demo.i: src/group_discussion_demo.cpp.i
+
+.PHONY : src/group_discussion_demo.i
+
+# target to preprocess a source file
+src/group_discussion_demo.cpp.i:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_demo.dir/build.make srl_final/CMakeFiles/group_discussion_demo.dir/src/group_discussion_demo.cpp.i
+.PHONY : src/group_discussion_demo.cpp.i
+
+src/group_discussion_demo.s: src/group_discussion_demo.cpp.s
+
+.PHONY : src/group_discussion_demo.s
+
+# target to generate assembly for a file
+src/group_discussion_demo.cpp.s:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_demo.dir/build.make srl_final/CMakeFiles/group_discussion_demo.dir/src/group_discussion_demo.cpp.s
+.PHONY : src/group_discussion_demo.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -401,6 +485,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... group_discussion_demo"
 	@echo "... srl_final_generate_messages"
 	@echo "... _srl_final_generate_messages_check_deps_glove"
 	@echo "... srl_final_generate_messages_cpp"
@@ -408,6 +493,7 @@ help:
 	@echo "... srl_final_generate_messages_eus"
 	@echo "... install/local"
 	@echo "... srl_final_geneus"
+	@echo "... 2_final_trans_all_backup"
 	@echo "... srl_final_genlisp"
 	@echo "... srl_final_generate_messages_nodejs"
 	@echo "... srl_final_gennodejs"
@@ -418,6 +504,12 @@ help:
 	@echo "... src/2_final_trans_all.o"
 	@echo "... src/2_final_trans_all.i"
 	@echo "... src/2_final_trans_all.s"
+	@echo "... src/2_final_trans_all_backup.o"
+	@echo "... src/2_final_trans_all_backup.i"
+	@echo "... src/2_final_trans_all_backup.s"
+	@echo "... src/group_discussion_demo.o"
+	@echo "... src/group_discussion_demo.i"
+	@echo "... src/group_discussion_demo.s"
 .PHONY : help
 
 

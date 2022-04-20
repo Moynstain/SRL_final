@@ -1,8 +1,9 @@
 //
-// Created by harlab on 2022/4/18.
+// Created by harlab on 2022/4/20.
 //
 
-/// 本文档为 ~/script/2_final_trans_all.py的c++版本
+
+/// 本文档为 ~/script/2_final_trans_all.py的c++版本 - 备份
 
 #include "iostream"
 #include "vector"

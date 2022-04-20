@@ -102,6 +102,7 @@
 /home/harlab/ros_ws_1/build/srl_final/CMakeFiles/rebuild_cache.dir
 /home/harlab/ros_ws_1/build/srl_final/CMakeFiles/edit_cache.dir
 /home/harlab/ros_ws_1/build/srl_final/CMakeFiles/test.dir
+/home/harlab/ros_ws_1/build/srl_final/CMakeFiles/group_discussion_demo.dir
 /home/harlab/ros_ws_1/build/srl_final/CMakeFiles/srl_final_generate_messages.dir
 /home/harlab/ros_ws_1/build/srl_final/CMakeFiles/_srl_final_generate_messages_check_deps_glove.dir
 /home/harlab/ros_ws_1/build/srl_final/CMakeFiles/srl_final_generate_messages_cpp.dir
@@ -109,6 +110,7 @@
 /home/harlab/ros_ws_1/build/srl_final/CMakeFiles/srl_final_generate_messages_eus.dir
 /home/harlab/ros_ws_1/build/srl_final/CMakeFiles/install/local.dir
 /home/harlab/ros_ws_1/build/srl_final/CMakeFiles/srl_final_geneus.dir
+/home/harlab/ros_ws_1/build/srl_final/CMakeFiles/2_final_trans_all_backup.dir
 /home/harlab/ros_ws_1/build/srl_final/CMakeFiles/srl_final_genlisp.dir
 /home/harlab/ros_ws_1/build/srl_final/CMakeFiles/srl_final_generate_messages_nodejs.dir
 /home/harlab/ros_ws_1/build/srl_final/CMakeFiles/srl_final_gennodejs.dir

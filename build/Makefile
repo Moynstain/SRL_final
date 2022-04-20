@@ -896,6 +896,19 @@ glove_pub_test_1/fast:
 .PHONY : glove_pub_test_1/fast
 
 #=============================================================================
+# Target rules for targets named group_discussion_demo
+
+# Build rule for target.
+group_discussion_demo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 group_discussion_demo
+.PHONY : group_discussion_demo
+
+# fast build rule for target.
+group_discussion_demo/fast:
+	$(MAKE) -f srl_final/CMakeFiles/group_discussion_demo.dir/build.make srl_final/CMakeFiles/group_discussion_demo.dir/build
+.PHONY : group_discussion_demo/fast
+
+#=============================================================================
 # Target rules for targets named srl_final_generate_messages
 
 # Build rule for target.
@@ -972,6 +985,19 @@ srl_final_geneus: cmake_check_build_system
 srl_final_geneus/fast:
 	$(MAKE) -f srl_final/CMakeFiles/srl_final_geneus.dir/build.make srl_final/CMakeFiles/srl_final_geneus.dir/build
 .PHONY : srl_final_geneus/fast
+
+#=============================================================================
+# Target rules for targets named 2_final_trans_all_backup
+
+# Build rule for target.
+2_final_trans_all_backup: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 2_final_trans_all_backup
+.PHONY : 2_final_trans_all_backup
+
+# fast build rule for target.
+2_final_trans_all_backup/fast:
+	$(MAKE) -f srl_final/CMakeFiles/2_final_trans_all_backup.dir/build.make srl_final/CMakeFiles/2_final_trans_all_backup.dir/build
+.PHONY : 2_final_trans_all_backup/fast
 
 #=============================================================================
 # Target rules for targets named srl_final_genlisp
@@ -1133,12 +1159,14 @@ help:
 	@echo "... glove_sub_test_1"
 	@echo "... sense_glove_test_generate_messages_eus"
 	@echo "... glove_pub_test_1"
+	@echo "... group_discussion_demo"
 	@echo "... srl_final_generate_messages"
 	@echo "... _srl_final_generate_messages_check_deps_glove"
 	@echo "... srl_final_generate_messages_cpp"
 	@echo "... srl_final_generate_messages_lisp"
 	@echo "... srl_final_generate_messages_eus"
 	@echo "... srl_final_geneus"
+	@echo "... 2_final_trans_all_backup"
 	@echo "... srl_final_genlisp"
 	@echo "... srl_final_generate_messages_nodejs"
 	@echo "... srl_final_gennodejs"
