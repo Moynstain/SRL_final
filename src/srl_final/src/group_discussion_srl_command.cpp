@@ -29,6 +29,23 @@ using namespace Eigen;
 
 // ros::NodeHandle n;
 
+
+
+
+
+//
+//Eigen::Matrix4d t265_2_to_srl(Vector4d t265_point){
+////    rot_y = np.mat([[0, 0, 1, 0], [0, 1, 0, 0], [-1, 0, 0, 0], [0, 0, 0, 1]])
+////    rot_z = np.mat([[0, -1, 0, 0], [1, 0, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]])
+////    Trans = np.mat([[1, 0, 0, 0], [0, 1, 0, 0], [
+////    0, 0, 1, 0], [0, 80.15, -5.95, 1]])
+////    T_matrix = rot_y * rot_z * Trans
+//
+//
+//
+//    return SRL_point;
+//}
+
 void srl_trans_func(const srl_final::Float32MultiArraySRLConstPtr& sub1, const srl_final::Float32MultiArraySRLConstPtr& sub2){
     auto sub1_data = sub1->data;
     auto sub2_data = sub2->data;
@@ -40,9 +57,31 @@ void srl_trans_func(const srl_final::Float32MultiArraySRLConstPtr& sub1, const s
                sub2_data[4], sub2_data[5], sub2_data[6], sub2_data[7],
                sub2_data[8], sub2_data[9], sub2_data[10], sub2_data[11],
                sub2_data[12], sub2_data[13], sub2_data[14], sub2_data[15];
+    Vector4d point_t265_2 = eye_point * t265_tf; /// 得到t265_2坐标系下的点
 
-    auto
 
+    /// 以下部分为t265_2至srl的变换
+    Matrix4d rot_y, rot_z, Trans;
+    rot_y << 0, 0, 1, 0,
+            0, 1, 0, 0,
+            -1, 0, 0, 0,
+            0, 0, 0, 1;
+    rot_z << 0, -1, 0, 0,
+            1, 0, 0, 0,
+            0, 0, 1, 0,
+            0, 0, 0, 1;
+    Trans << 1, 0, 0, 0,
+            0, 1, 0, 0,
+            0, 0, 1, 0,
+            0, 80.15, -5.95, 1;
+    auto T_Matrix = rot_y * rot_z * Trans;
+
+
+
+    Matrix4d SRL_Point = point_t265_2 * T_Matrix;
+    // Vector4d SRL_Point = t265_2_to_srl(point_t265_2);
+    cout << "----------------------\n";
+    cout << SRL_Point << endl;
 
 }
 
