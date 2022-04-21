@@ -896,17 +896,30 @@ glove_pub_test_1/fast:
 .PHONY : glove_pub_test_1/fast
 
 #=============================================================================
-# Target rules for targets named group_discussion_demo
+# Target rules for targets named group_discussion_pub
 
 # Build rule for target.
-group_discussion_demo: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 group_discussion_demo
-.PHONY : group_discussion_demo
+group_discussion_pub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 group_discussion_pub
+.PHONY : group_discussion_pub
 
 # fast build rule for target.
-group_discussion_demo/fast:
-	$(MAKE) -f srl_final/CMakeFiles/group_discussion_demo.dir/build.make srl_final/CMakeFiles/group_discussion_demo.dir/build
-.PHONY : group_discussion_demo/fast
+group_discussion_pub/fast:
+	$(MAKE) -f srl_final/CMakeFiles/group_discussion_pub.dir/build.make srl_final/CMakeFiles/group_discussion_pub.dir/build
+.PHONY : group_discussion_pub/fast
+
+#=============================================================================
+# Target rules for targets named group_discussion_sub
+
+# Build rule for target.
+group_discussion_sub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 group_discussion_sub
+.PHONY : group_discussion_sub
+
+# fast build rule for target.
+group_discussion_sub/fast:
+	$(MAKE) -f srl_final/CMakeFiles/group_discussion_sub.dir/build.make srl_final/CMakeFiles/group_discussion_sub.dir/build
+.PHONY : group_discussion_sub/fast
 
 #=============================================================================
 # Target rules for targets named srl_final_generate_messages
@@ -933,6 +946,19 @@ _srl_final_generate_messages_check_deps_glove: cmake_check_build_system
 _srl_final_generate_messages_check_deps_glove/fast:
 	$(MAKE) -f srl_final/CMakeFiles/_srl_final_generate_messages_check_deps_glove.dir/build.make srl_final/CMakeFiles/_srl_final_generate_messages_check_deps_glove.dir/build
 .PHONY : _srl_final_generate_messages_check_deps_glove/fast
+
+#=============================================================================
+# Target rules for targets named group_discussion_eye_tracker_sim
+
+# Build rule for target.
+group_discussion_eye_tracker_sim: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 group_discussion_eye_tracker_sim
+.PHONY : group_discussion_eye_tracker_sim
+
+# fast build rule for target.
+group_discussion_eye_tracker_sim/fast:
+	$(MAKE) -f srl_final/CMakeFiles/group_discussion_eye_tracker_sim.dir/build.make srl_final/CMakeFiles/group_discussion_eye_tracker_sim.dir/build
+.PHONY : group_discussion_eye_tracker_sim/fast
 
 #=============================================================================
 # Target rules for targets named srl_final_generate_messages_cpp
@@ -1159,9 +1185,11 @@ help:
 	@echo "... glove_sub_test_1"
 	@echo "... sense_glove_test_generate_messages_eus"
 	@echo "... glove_pub_test_1"
-	@echo "... group_discussion_demo"
+	@echo "... group_discussion_pub"
+	@echo "... group_discussion_sub"
 	@echo "... srl_final_generate_messages"
 	@echo "... _srl_final_generate_messages_check_deps_glove"
+	@echo "... group_discussion_eye_tracker_sim"
 	@echo "... srl_final_generate_messages_cpp"
 	@echo "... srl_final_generate_messages_lisp"
 	@echo "... srl_final_generate_messages_eus"

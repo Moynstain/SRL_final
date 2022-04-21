@@ -5,7 +5,9 @@
 #include "vector"
 #include "cstdlib"
 #include "eigen3/Eigen/Core"
-
+#include "eigen3/Eigen/Geometry"
+#include "iomanip"
+#include "random"
 
 using namespace std;
 #define MaxSize 10
@@ -89,8 +91,6 @@ vector<vector<double>> mat_mul_ult(vector<vector<double>> a, vector<vector<doubl
         }
     }
 
-
-
 }
 
 
@@ -172,6 +172,34 @@ int main(){
     cout << "赋值测试：\n";
     // cout << rot_x[0] << "\t" << rot_x[6];
     cout << rot_x(0, 0) << "\t" << rot_x(1, 2);
+
+    cout << "++++++++Random Quat+++++++++\n";
+    for (int i = 1; i <= 20; i++) {
+        auto quat_random = Eigen::Quaterniond::UnitRandom();
+        Eigen::Matrix3d rot_random = quat_random.toRotationMatrix();
+        cout << rot_random << endl << endl;
+        srand((unsigned) time(NULL));
+        auto distance = rand();
+        cout << distance << endl;
+    }
+    srand((unsigned) time(NULL));
+    auto distance1 = rand();
+    cout << distance1 << endl;
+    auto distance2 = rand();
+    auto distance3 = rand();
+    cout << distance2 << endl;
+    cout << distance3 << endl;
+
+    cout << "++++++++++\n";
+    constexpr int MIN = 100;
+    constexpr int MAX = 999;
+
+    random_device rd;
+    default_random_engine eng(rd());
+    uniform_real_distribution<double> distr(MIN, MAX);
+    cout << setprecision(7) << endl;
+    cout << distr(eng) << endl;
+
     return 0;
 }
 

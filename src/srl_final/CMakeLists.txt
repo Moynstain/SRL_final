@@ -25,7 +25,6 @@ generate_messages(
     std_msgs
 )
 
-
 catkin_package()
 
 include_directories(include ${catkin_INCLUDE_DIRS} )
@@ -45,10 +44,20 @@ target_link_libraries(2_final_trans_all_backup ${LIB_DIR_CONNECT})
 target_link_libraries(2_final_trans_all_backup ${catkin_LIBRARIES})
 add_dependencies(2_final_trans_all_backup srl_final_generate_messages_cpp)
 
-add_executable(group_discussion_demo src/group_discussion_demo.cpp)
-target_link_libraries(group_discussion_demo ${LIB_DIR_CONNECT})
-target_link_libraries(group_discussion_demo ${catkin_LIBRARIES})
-add_dependencies(group_discussion_demo srl_final_generate_messages_cpp)
+add_executable(group_discussion_sub src/group_discussion_sub.cpp)
+target_link_libraries(group_discussion_sub ${LIB_DIR_CONNECT})
+target_link_libraries(group_discussion_sub ${catkin_LIBRARIES})
+add_dependencies(group_discussion_sub srl_final_generate_messages_cpp)
+
+add_executable(group_discussion_pub src/group_discussion_pub.cpp)
+target_link_libraries(group_discussion_pub ${LIB_DIR_CONNECT})
+target_link_libraries(group_discussion_pub ${catkin_LIBRARIES})
+add_dependencies(group_discussion_pub srl_final_generate_messages_cpp)
+
+add_executable(group_discussion_eye_tracker_sim src/group_discussion_eye_tracker_sim.cpp)
+target_link_libraries(group_discussion_eye_tracker_sim ${LIB_DIR_CONNECT})
+target_link_libraries(group_discussion_eye_tracker_sim ${catkin_LIBRARIES})
+add_dependencies(group_discussion_eye_tracker_sim srl_final_generate_messages_cpp)
 
 #add_executable(grammer_test src/grammer_test.cpp)
 #target_link_libraries(grammer_test ${catkin_LIBRARIES})

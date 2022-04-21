@@ -168,19 +168,34 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-srl_final/CMakeFiles/group_discussion_demo.dir/rule:
-	cd /home/harlab/ros_ws_1/build && $(MAKE) -f CMakeFiles/Makefile2 srl_final/CMakeFiles/group_discussion_demo.dir/rule
-.PHONY : srl_final/CMakeFiles/group_discussion_demo.dir/rule
+srl_final/CMakeFiles/group_discussion_pub.dir/rule:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f CMakeFiles/Makefile2 srl_final/CMakeFiles/group_discussion_pub.dir/rule
+.PHONY : srl_final/CMakeFiles/group_discussion_pub.dir/rule
 
 # Convenience name for target.
-group_discussion_demo: srl_final/CMakeFiles/group_discussion_demo.dir/rule
+group_discussion_pub: srl_final/CMakeFiles/group_discussion_pub.dir/rule
 
-.PHONY : group_discussion_demo
+.PHONY : group_discussion_pub
 
 # fast build rule for target.
-group_discussion_demo/fast:
-	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_demo.dir/build.make srl_final/CMakeFiles/group_discussion_demo.dir/build
-.PHONY : group_discussion_demo/fast
+group_discussion_pub/fast:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_pub.dir/build.make srl_final/CMakeFiles/group_discussion_pub.dir/build
+.PHONY : group_discussion_pub/fast
+
+# Convenience name for target.
+srl_final/CMakeFiles/group_discussion_sub.dir/rule:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f CMakeFiles/Makefile2 srl_final/CMakeFiles/group_discussion_sub.dir/rule
+.PHONY : srl_final/CMakeFiles/group_discussion_sub.dir/rule
+
+# Convenience name for target.
+group_discussion_sub: srl_final/CMakeFiles/group_discussion_sub.dir/rule
+
+.PHONY : group_discussion_sub
+
+# fast build rule for target.
+group_discussion_sub/fast:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_sub.dir/build.make srl_final/CMakeFiles/group_discussion_sub.dir/build
+.PHONY : group_discussion_sub/fast
 
 # Convenience name for target.
 srl_final/CMakeFiles/srl_final_generate_messages.dir/rule:
@@ -211,6 +226,21 @@ _srl_final_generate_messages_check_deps_glove: srl_final/CMakeFiles/_srl_final_g
 _srl_final_generate_messages_check_deps_glove/fast:
 	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/_srl_final_generate_messages_check_deps_glove.dir/build.make srl_final/CMakeFiles/_srl_final_generate_messages_check_deps_glove.dir/build
 .PHONY : _srl_final_generate_messages_check_deps_glove/fast
+
+# Convenience name for target.
+srl_final/CMakeFiles/group_discussion_eye_tracker_sim.dir/rule:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f CMakeFiles/Makefile2 srl_final/CMakeFiles/group_discussion_eye_tracker_sim.dir/rule
+.PHONY : srl_final/CMakeFiles/group_discussion_eye_tracker_sim.dir/rule
+
+# Convenience name for target.
+group_discussion_eye_tracker_sim: srl_final/CMakeFiles/group_discussion_eye_tracker_sim.dir/rule
+
+.PHONY : group_discussion_eye_tracker_sim
+
+# fast build rule for target.
+group_discussion_eye_tracker_sim/fast:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_eye_tracker_sim.dir/build.make srl_final/CMakeFiles/group_discussion_eye_tracker_sim.dir/build
+.PHONY : group_discussion_eye_tracker_sim/fast
 
 # Convenience name for target.
 srl_final/CMakeFiles/srl_final_generate_messages_cpp.dir/rule:
@@ -446,32 +476,86 @@ src/2_final_trans_all_backup.cpp.s:
 	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/2_final_trans_all_backup.dir/build.make srl_final/CMakeFiles/2_final_trans_all_backup.dir/src/2_final_trans_all_backup.cpp.s
 .PHONY : src/2_final_trans_all_backup.cpp.s
 
-src/group_discussion_demo.o: src/group_discussion_demo.cpp.o
+src/group_discussion_eye_tracker_sim.o: src/group_discussion_eye_tracker_sim.cpp.o
 
-.PHONY : src/group_discussion_demo.o
+.PHONY : src/group_discussion_eye_tracker_sim.o
 
 # target to build an object file
-src/group_discussion_demo.cpp.o:
-	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_demo.dir/build.make srl_final/CMakeFiles/group_discussion_demo.dir/src/group_discussion_demo.cpp.o
-.PHONY : src/group_discussion_demo.cpp.o
+src/group_discussion_eye_tracker_sim.cpp.o:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_eye_tracker_sim.dir/build.make srl_final/CMakeFiles/group_discussion_eye_tracker_sim.dir/src/group_discussion_eye_tracker_sim.cpp.o
+.PHONY : src/group_discussion_eye_tracker_sim.cpp.o
 
-src/group_discussion_demo.i: src/group_discussion_demo.cpp.i
+src/group_discussion_eye_tracker_sim.i: src/group_discussion_eye_tracker_sim.cpp.i
 
-.PHONY : src/group_discussion_demo.i
+.PHONY : src/group_discussion_eye_tracker_sim.i
 
 # target to preprocess a source file
-src/group_discussion_demo.cpp.i:
-	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_demo.dir/build.make srl_final/CMakeFiles/group_discussion_demo.dir/src/group_discussion_demo.cpp.i
-.PHONY : src/group_discussion_demo.cpp.i
+src/group_discussion_eye_tracker_sim.cpp.i:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_eye_tracker_sim.dir/build.make srl_final/CMakeFiles/group_discussion_eye_tracker_sim.dir/src/group_discussion_eye_tracker_sim.cpp.i
+.PHONY : src/group_discussion_eye_tracker_sim.cpp.i
 
-src/group_discussion_demo.s: src/group_discussion_demo.cpp.s
+src/group_discussion_eye_tracker_sim.s: src/group_discussion_eye_tracker_sim.cpp.s
 
-.PHONY : src/group_discussion_demo.s
+.PHONY : src/group_discussion_eye_tracker_sim.s
 
 # target to generate assembly for a file
-src/group_discussion_demo.cpp.s:
-	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_demo.dir/build.make srl_final/CMakeFiles/group_discussion_demo.dir/src/group_discussion_demo.cpp.s
-.PHONY : src/group_discussion_demo.cpp.s
+src/group_discussion_eye_tracker_sim.cpp.s:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_eye_tracker_sim.dir/build.make srl_final/CMakeFiles/group_discussion_eye_tracker_sim.dir/src/group_discussion_eye_tracker_sim.cpp.s
+.PHONY : src/group_discussion_eye_tracker_sim.cpp.s
+
+src/group_discussion_pub.o: src/group_discussion_pub.cpp.o
+
+.PHONY : src/group_discussion_pub.o
+
+# target to build an object file
+src/group_discussion_pub.cpp.o:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_pub.dir/build.make srl_final/CMakeFiles/group_discussion_pub.dir/src/group_discussion_pub.cpp.o
+.PHONY : src/group_discussion_pub.cpp.o
+
+src/group_discussion_pub.i: src/group_discussion_pub.cpp.i
+
+.PHONY : src/group_discussion_pub.i
+
+# target to preprocess a source file
+src/group_discussion_pub.cpp.i:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_pub.dir/build.make srl_final/CMakeFiles/group_discussion_pub.dir/src/group_discussion_pub.cpp.i
+.PHONY : src/group_discussion_pub.cpp.i
+
+src/group_discussion_pub.s: src/group_discussion_pub.cpp.s
+
+.PHONY : src/group_discussion_pub.s
+
+# target to generate assembly for a file
+src/group_discussion_pub.cpp.s:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_pub.dir/build.make srl_final/CMakeFiles/group_discussion_pub.dir/src/group_discussion_pub.cpp.s
+.PHONY : src/group_discussion_pub.cpp.s
+
+src/group_discussion_sub.o: src/group_discussion_sub.cpp.o
+
+.PHONY : src/group_discussion_sub.o
+
+# target to build an object file
+src/group_discussion_sub.cpp.o:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_sub.dir/build.make srl_final/CMakeFiles/group_discussion_sub.dir/src/group_discussion_sub.cpp.o
+.PHONY : src/group_discussion_sub.cpp.o
+
+src/group_discussion_sub.i: src/group_discussion_sub.cpp.i
+
+.PHONY : src/group_discussion_sub.i
+
+# target to preprocess a source file
+src/group_discussion_sub.cpp.i:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_sub.dir/build.make srl_final/CMakeFiles/group_discussion_sub.dir/src/group_discussion_sub.cpp.i
+.PHONY : src/group_discussion_sub.cpp.i
+
+src/group_discussion_sub.s: src/group_discussion_sub.cpp.s
+
+.PHONY : src/group_discussion_sub.s
+
+# target to generate assembly for a file
+src/group_discussion_sub.cpp.s:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_sub.dir/build.make srl_final/CMakeFiles/group_discussion_sub.dir/src/group_discussion_sub.cpp.s
+.PHONY : src/group_discussion_sub.cpp.s
 
 # Help Target
 help:
@@ -485,9 +569,11 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... group_discussion_demo"
+	@echo "... group_discussion_pub"
+	@echo "... group_discussion_sub"
 	@echo "... srl_final_generate_messages"
 	@echo "... _srl_final_generate_messages_check_deps_glove"
+	@echo "... group_discussion_eye_tracker_sim"
 	@echo "... srl_final_generate_messages_cpp"
 	@echo "... srl_final_generate_messages_lisp"
 	@echo "... srl_final_generate_messages_eus"
@@ -507,9 +593,15 @@ help:
 	@echo "... src/2_final_trans_all_backup.o"
 	@echo "... src/2_final_trans_all_backup.i"
 	@echo "... src/2_final_trans_all_backup.s"
-	@echo "... src/group_discussion_demo.o"
-	@echo "... src/group_discussion_demo.i"
-	@echo "... src/group_discussion_demo.s"
+	@echo "... src/group_discussion_eye_tracker_sim.o"
+	@echo "... src/group_discussion_eye_tracker_sim.i"
+	@echo "... src/group_discussion_eye_tracker_sim.s"
+	@echo "... src/group_discussion_pub.o"
+	@echo "... src/group_discussion_pub.i"
+	@echo "... src/group_discussion_pub.s"
+	@echo "... src/group_discussion_sub.o"
+	@echo "... src/group_discussion_sub.i"
+	@echo "... src/group_discussion_sub.s"
 .PHONY : help
 
 
