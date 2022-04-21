@@ -38,7 +38,10 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/srl_final/msg" TYPE FILE FILES "/home/harlab/ros_ws_1/src/srl_final/msg/glove.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/srl_final/msg" TYPE FILE FILES
+    "/home/harlab/ros_ws_1/src/srl_final/msg/glove.msg"
+    "/home/harlab/ros_ws_1/src/srl_final/msg/Float32MultiArraySRL.msg"
+    )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

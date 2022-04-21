@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/harlab/ros_ws_1/src/srl_final/msg/glove.msg"
+messages_str = "/home/harlab/ros_ws_1/src/srl_final/msg/glove.msg;/home/harlab/ros_ws_1/src/srl_final/msg/Float32MultiArraySRL.msg"
 services_str = ""
 pkg_name = "srl_final"
 dependencies_str = "std_msgs"

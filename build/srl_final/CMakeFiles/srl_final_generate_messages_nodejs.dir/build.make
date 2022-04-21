@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/harlab/ros_ws_1/build
 include srl_final/CMakeFiles/srl_final_generate_messages_nodejs.dir/progress.make
 
 srl_final/CMakeFiles/srl_final_generate_messages_nodejs: /home/harlab/ros_ws_1/devel/share/gennodejs/ros/srl_final/msg/glove.js
+srl_final/CMakeFiles/srl_final_generate_messages_nodejs: /home/harlab/ros_ws_1/devel/share/gennodejs/ros/srl_final/msg/Float32MultiArraySRL.js
 
 
 /home/harlab/ros_ws_1/devel/share/gennodejs/ros/srl_final/msg/glove.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
@@ -61,8 +62,15 @@ srl_final/CMakeFiles/srl_final_generate_messages_nodejs: /home/harlab/ros_ws_1/d
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/harlab/ros_ws_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from srl_final/glove.msg"
 	cd /home/harlab/ros_ws_1/build/srl_final && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/harlab/ros_ws_1/src/srl_final/msg/glove.msg -Isrl_final:/home/harlab/ros_ws_1/src/srl_final/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p srl_final -o /home/harlab/ros_ws_1/devel/share/gennodejs/ros/srl_final/msg
 
+/home/harlab/ros_ws_1/devel/share/gennodejs/ros/srl_final/msg/Float32MultiArraySRL.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/harlab/ros_ws_1/devel/share/gennodejs/ros/srl_final/msg/Float32MultiArraySRL.js: /home/harlab/ros_ws_1/src/srl_final/msg/Float32MultiArraySRL.msg
+/home/harlab/ros_ws_1/devel/share/gennodejs/ros/srl_final/msg/Float32MultiArraySRL.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/harlab/ros_ws_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from srl_final/Float32MultiArraySRL.msg"
+	cd /home/harlab/ros_ws_1/build/srl_final && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/harlab/ros_ws_1/src/srl_final/msg/Float32MultiArraySRL.msg -Isrl_final:/home/harlab/ros_ws_1/src/srl_final/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p srl_final -o /home/harlab/ros_ws_1/devel/share/gennodejs/ros/srl_final/msg
+
 srl_final_generate_messages_nodejs: srl_final/CMakeFiles/srl_final_generate_messages_nodejs
 srl_final_generate_messages_nodejs: /home/harlab/ros_ws_1/devel/share/gennodejs/ros/srl_final/msg/glove.js
+srl_final_generate_messages_nodejs: /home/harlab/ros_ws_1/devel/share/gennodejs/ros/srl_final/msg/Float32MultiArraySRL.js
 srl_final_generate_messages_nodejs: srl_final/CMakeFiles/srl_final_generate_messages_nodejs.dir/build.make
 
 .PHONY : srl_final_generate_messages_nodejs

@@ -90,6 +90,17 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -111,17 +122,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -168,6 +168,36 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+srl_final/CMakeFiles/group_discussion_trans_all_sim.dir/rule:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f CMakeFiles/Makefile2 srl_final/CMakeFiles/group_discussion_trans_all_sim.dir/rule
+.PHONY : srl_final/CMakeFiles/group_discussion_trans_all_sim.dir/rule
+
+# Convenience name for target.
+group_discussion_trans_all_sim: srl_final/CMakeFiles/group_discussion_trans_all_sim.dir/rule
+
+.PHONY : group_discussion_trans_all_sim
+
+# fast build rule for target.
+group_discussion_trans_all_sim/fast:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_trans_all_sim.dir/build.make srl_final/CMakeFiles/group_discussion_trans_all_sim.dir/build
+.PHONY : group_discussion_trans_all_sim/fast
+
+# Convenience name for target.
+srl_final/CMakeFiles/group_discussion_t265_no1_sim.dir/rule:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f CMakeFiles/Makefile2 srl_final/CMakeFiles/group_discussion_t265_no1_sim.dir/rule
+.PHONY : srl_final/CMakeFiles/group_discussion_t265_no1_sim.dir/rule
+
+# Convenience name for target.
+group_discussion_t265_no1_sim: srl_final/CMakeFiles/group_discussion_t265_no1_sim.dir/rule
+
+.PHONY : group_discussion_t265_no1_sim
+
+# fast build rule for target.
+group_discussion_t265_no1_sim/fast:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_t265_no1_sim.dir/build.make srl_final/CMakeFiles/group_discussion_t265_no1_sim.dir/build
+.PHONY : group_discussion_t265_no1_sim/fast
+
+# Convenience name for target.
 srl_final/CMakeFiles/group_discussion_pub.dir/rule:
 	cd /home/harlab/ros_ws_1/build && $(MAKE) -f CMakeFiles/Makefile2 srl_final/CMakeFiles/group_discussion_pub.dir/rule
 .PHONY : srl_final/CMakeFiles/group_discussion_pub.dir/rule
@@ -183,6 +213,21 @@ group_discussion_pub/fast:
 .PHONY : group_discussion_pub/fast
 
 # Convenience name for target.
+srl_final/CMakeFiles/group_discussion_t265_no2_sim.dir/rule:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f CMakeFiles/Makefile2 srl_final/CMakeFiles/group_discussion_t265_no2_sim.dir/rule
+.PHONY : srl_final/CMakeFiles/group_discussion_t265_no2_sim.dir/rule
+
+# Convenience name for target.
+group_discussion_t265_no2_sim: srl_final/CMakeFiles/group_discussion_t265_no2_sim.dir/rule
+
+.PHONY : group_discussion_t265_no2_sim
+
+# fast build rule for target.
+group_discussion_t265_no2_sim/fast:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_t265_no2_sim.dir/build.make srl_final/CMakeFiles/group_discussion_t265_no2_sim.dir/build
+.PHONY : group_discussion_t265_no2_sim/fast
+
+# Convenience name for target.
 srl_final/CMakeFiles/group_discussion_sub.dir/rule:
 	cd /home/harlab/ros_ws_1/build && $(MAKE) -f CMakeFiles/Makefile2 srl_final/CMakeFiles/group_discussion_sub.dir/rule
 .PHONY : srl_final/CMakeFiles/group_discussion_sub.dir/rule
@@ -196,6 +241,21 @@ group_discussion_sub: srl_final/CMakeFiles/group_discussion_sub.dir/rule
 group_discussion_sub/fast:
 	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_sub.dir/build.make srl_final/CMakeFiles/group_discussion_sub.dir/build
 .PHONY : group_discussion_sub/fast
+
+# Convenience name for target.
+srl_final/CMakeFiles/2_final_trans_all.dir/rule:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f CMakeFiles/Makefile2 srl_final/CMakeFiles/2_final_trans_all.dir/rule
+.PHONY : srl_final/CMakeFiles/2_final_trans_all.dir/rule
+
+# Convenience name for target.
+2_final_trans_all: srl_final/CMakeFiles/2_final_trans_all.dir/rule
+
+.PHONY : 2_final_trans_all
+
+# fast build rule for target.
+2_final_trans_all/fast:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/2_final_trans_all.dir/build.make srl_final/CMakeFiles/2_final_trans_all.dir/build
+.PHONY : 2_final_trans_all/fast
 
 # Convenience name for target.
 srl_final/CMakeFiles/srl_final_generate_messages.dir/rule:
@@ -226,6 +286,21 @@ _srl_final_generate_messages_check_deps_glove: srl_final/CMakeFiles/_srl_final_g
 _srl_final_generate_messages_check_deps_glove/fast:
 	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/_srl_final_generate_messages_check_deps_glove.dir/build.make srl_final/CMakeFiles/_srl_final_generate_messages_check_deps_glove.dir/build
 .PHONY : _srl_final_generate_messages_check_deps_glove/fast
+
+# Convenience name for target.
+srl_final/CMakeFiles/_srl_final_generate_messages_check_deps_Float32MultiArraySRL.dir/rule:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f CMakeFiles/Makefile2 srl_final/CMakeFiles/_srl_final_generate_messages_check_deps_Float32MultiArraySRL.dir/rule
+.PHONY : srl_final/CMakeFiles/_srl_final_generate_messages_check_deps_Float32MultiArraySRL.dir/rule
+
+# Convenience name for target.
+_srl_final_generate_messages_check_deps_Float32MultiArraySRL: srl_final/CMakeFiles/_srl_final_generate_messages_check_deps_Float32MultiArraySRL.dir/rule
+
+.PHONY : _srl_final_generate_messages_check_deps_Float32MultiArraySRL
+
+# fast build rule for target.
+_srl_final_generate_messages_check_deps_Float32MultiArraySRL/fast:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/_srl_final_generate_messages_check_deps_Float32MultiArraySRL.dir/build.make srl_final/CMakeFiles/_srl_final_generate_messages_check_deps_Float32MultiArraySRL.dir/build
+.PHONY : _srl_final_generate_messages_check_deps_Float32MultiArraySRL/fast
 
 # Convenience name for target.
 srl_final/CMakeFiles/group_discussion_eye_tracker_sim.dir/rule:
@@ -363,19 +438,19 @@ srl_final_gennodejs/fast:
 .PHONY : srl_final_gennodejs/fast
 
 # Convenience name for target.
-srl_final/CMakeFiles/2_final_trans_all.dir/rule:
-	cd /home/harlab/ros_ws_1/build && $(MAKE) -f CMakeFiles/Makefile2 srl_final/CMakeFiles/2_final_trans_all.dir/rule
-.PHONY : srl_final/CMakeFiles/2_final_trans_all.dir/rule
+srl_final/CMakeFiles/group_discussion_srl_command.dir/rule:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f CMakeFiles/Makefile2 srl_final/CMakeFiles/group_discussion_srl_command.dir/rule
+.PHONY : srl_final/CMakeFiles/group_discussion_srl_command.dir/rule
 
 # Convenience name for target.
-2_final_trans_all: srl_final/CMakeFiles/2_final_trans_all.dir/rule
+group_discussion_srl_command: srl_final/CMakeFiles/group_discussion_srl_command.dir/rule
 
-.PHONY : 2_final_trans_all
+.PHONY : group_discussion_srl_command
 
 # fast build rule for target.
-2_final_trans_all/fast:
-	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/2_final_trans_all.dir/build.make srl_final/CMakeFiles/2_final_trans_all.dir/build
-.PHONY : 2_final_trans_all/fast
+group_discussion_srl_command/fast:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_srl_command.dir/build.make srl_final/CMakeFiles/group_discussion_srl_command.dir/build
+.PHONY : group_discussion_srl_command/fast
 
 # Convenience name for target.
 srl_final/CMakeFiles/srl_final_gencpp.dir/rule:
@@ -530,6 +605,33 @@ src/group_discussion_pub.cpp.s:
 	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_pub.dir/build.make srl_final/CMakeFiles/group_discussion_pub.dir/src/group_discussion_pub.cpp.s
 .PHONY : src/group_discussion_pub.cpp.s
 
+src/group_discussion_srl_command.o: src/group_discussion_srl_command.cpp.o
+
+.PHONY : src/group_discussion_srl_command.o
+
+# target to build an object file
+src/group_discussion_srl_command.cpp.o:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_srl_command.dir/build.make srl_final/CMakeFiles/group_discussion_srl_command.dir/src/group_discussion_srl_command.cpp.o
+.PHONY : src/group_discussion_srl_command.cpp.o
+
+src/group_discussion_srl_command.i: src/group_discussion_srl_command.cpp.i
+
+.PHONY : src/group_discussion_srl_command.i
+
+# target to preprocess a source file
+src/group_discussion_srl_command.cpp.i:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_srl_command.dir/build.make srl_final/CMakeFiles/group_discussion_srl_command.dir/src/group_discussion_srl_command.cpp.i
+.PHONY : src/group_discussion_srl_command.cpp.i
+
+src/group_discussion_srl_command.s: src/group_discussion_srl_command.cpp.s
+
+.PHONY : src/group_discussion_srl_command.s
+
+# target to generate assembly for a file
+src/group_discussion_srl_command.cpp.s:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_srl_command.dir/build.make srl_final/CMakeFiles/group_discussion_srl_command.dir/src/group_discussion_srl_command.cpp.s
+.PHONY : src/group_discussion_srl_command.cpp.s
+
 src/group_discussion_sub.o: src/group_discussion_sub.cpp.o
 
 .PHONY : src/group_discussion_sub.o
@@ -557,6 +659,87 @@ src/group_discussion_sub.cpp.s:
 	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_sub.dir/build.make srl_final/CMakeFiles/group_discussion_sub.dir/src/group_discussion_sub.cpp.s
 .PHONY : src/group_discussion_sub.cpp.s
 
+src/group_discussion_t265_no1_sim.o: src/group_discussion_t265_no1_sim.cpp.o
+
+.PHONY : src/group_discussion_t265_no1_sim.o
+
+# target to build an object file
+src/group_discussion_t265_no1_sim.cpp.o:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_t265_no1_sim.dir/build.make srl_final/CMakeFiles/group_discussion_t265_no1_sim.dir/src/group_discussion_t265_no1_sim.cpp.o
+.PHONY : src/group_discussion_t265_no1_sim.cpp.o
+
+src/group_discussion_t265_no1_sim.i: src/group_discussion_t265_no1_sim.cpp.i
+
+.PHONY : src/group_discussion_t265_no1_sim.i
+
+# target to preprocess a source file
+src/group_discussion_t265_no1_sim.cpp.i:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_t265_no1_sim.dir/build.make srl_final/CMakeFiles/group_discussion_t265_no1_sim.dir/src/group_discussion_t265_no1_sim.cpp.i
+.PHONY : src/group_discussion_t265_no1_sim.cpp.i
+
+src/group_discussion_t265_no1_sim.s: src/group_discussion_t265_no1_sim.cpp.s
+
+.PHONY : src/group_discussion_t265_no1_sim.s
+
+# target to generate assembly for a file
+src/group_discussion_t265_no1_sim.cpp.s:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_t265_no1_sim.dir/build.make srl_final/CMakeFiles/group_discussion_t265_no1_sim.dir/src/group_discussion_t265_no1_sim.cpp.s
+.PHONY : src/group_discussion_t265_no1_sim.cpp.s
+
+src/group_discussion_t265_no2_sim.o: src/group_discussion_t265_no2_sim.cpp.o
+
+.PHONY : src/group_discussion_t265_no2_sim.o
+
+# target to build an object file
+src/group_discussion_t265_no2_sim.cpp.o:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_t265_no2_sim.dir/build.make srl_final/CMakeFiles/group_discussion_t265_no2_sim.dir/src/group_discussion_t265_no2_sim.cpp.o
+.PHONY : src/group_discussion_t265_no2_sim.cpp.o
+
+src/group_discussion_t265_no2_sim.i: src/group_discussion_t265_no2_sim.cpp.i
+
+.PHONY : src/group_discussion_t265_no2_sim.i
+
+# target to preprocess a source file
+src/group_discussion_t265_no2_sim.cpp.i:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_t265_no2_sim.dir/build.make srl_final/CMakeFiles/group_discussion_t265_no2_sim.dir/src/group_discussion_t265_no2_sim.cpp.i
+.PHONY : src/group_discussion_t265_no2_sim.cpp.i
+
+src/group_discussion_t265_no2_sim.s: src/group_discussion_t265_no2_sim.cpp.s
+
+.PHONY : src/group_discussion_t265_no2_sim.s
+
+# target to generate assembly for a file
+src/group_discussion_t265_no2_sim.cpp.s:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_t265_no2_sim.dir/build.make srl_final/CMakeFiles/group_discussion_t265_no2_sim.dir/src/group_discussion_t265_no2_sim.cpp.s
+.PHONY : src/group_discussion_t265_no2_sim.cpp.s
+
+src/group_discussion_trans_all_sim.o: src/group_discussion_trans_all_sim.cpp.o
+
+.PHONY : src/group_discussion_trans_all_sim.o
+
+# target to build an object file
+src/group_discussion_trans_all_sim.cpp.o:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_trans_all_sim.dir/build.make srl_final/CMakeFiles/group_discussion_trans_all_sim.dir/src/group_discussion_trans_all_sim.cpp.o
+.PHONY : src/group_discussion_trans_all_sim.cpp.o
+
+src/group_discussion_trans_all_sim.i: src/group_discussion_trans_all_sim.cpp.i
+
+.PHONY : src/group_discussion_trans_all_sim.i
+
+# target to preprocess a source file
+src/group_discussion_trans_all_sim.cpp.i:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_trans_all_sim.dir/build.make srl_final/CMakeFiles/group_discussion_trans_all_sim.dir/src/group_discussion_trans_all_sim.cpp.i
+.PHONY : src/group_discussion_trans_all_sim.cpp.i
+
+src/group_discussion_trans_all_sim.s: src/group_discussion_trans_all_sim.cpp.s
+
+.PHONY : src/group_discussion_trans_all_sim.s
+
+# target to generate assembly for a file
+src/group_discussion_trans_all_sim.cpp.s:
+	cd /home/harlab/ros_ws_1/build && $(MAKE) -f srl_final/CMakeFiles/group_discussion_trans_all_sim.dir/build.make srl_final/CMakeFiles/group_discussion_trans_all_sim.dir/src/group_discussion_trans_all_sim.cpp.s
+.PHONY : src/group_discussion_trans_all_sim.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -566,13 +749,18 @@ help:
 	@echo "... install/strip"
 	@echo "... install"
 	@echo "... list_install_components"
+	@echo "... test"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... test"
+	@echo "... group_discussion_trans_all_sim"
+	@echo "... group_discussion_t265_no1_sim"
 	@echo "... group_discussion_pub"
+	@echo "... group_discussion_t265_no2_sim"
 	@echo "... group_discussion_sub"
+	@echo "... 2_final_trans_all"
 	@echo "... srl_final_generate_messages"
 	@echo "... _srl_final_generate_messages_check_deps_glove"
+	@echo "... _srl_final_generate_messages_check_deps_Float32MultiArraySRL"
 	@echo "... group_discussion_eye_tracker_sim"
 	@echo "... srl_final_generate_messages_cpp"
 	@echo "... srl_final_generate_messages_lisp"
@@ -583,7 +771,7 @@ help:
 	@echo "... srl_final_genlisp"
 	@echo "... srl_final_generate_messages_nodejs"
 	@echo "... srl_final_gennodejs"
-	@echo "... 2_final_trans_all"
+	@echo "... group_discussion_srl_command"
 	@echo "... srl_final_gencpp"
 	@echo "... srl_final_generate_messages_py"
 	@echo "... srl_final_genpy"
@@ -599,9 +787,21 @@ help:
 	@echo "... src/group_discussion_pub.o"
 	@echo "... src/group_discussion_pub.i"
 	@echo "... src/group_discussion_pub.s"
+	@echo "... src/group_discussion_srl_command.o"
+	@echo "... src/group_discussion_srl_command.i"
+	@echo "... src/group_discussion_srl_command.s"
 	@echo "... src/group_discussion_sub.o"
 	@echo "... src/group_discussion_sub.i"
 	@echo "... src/group_discussion_sub.s"
+	@echo "... src/group_discussion_t265_no1_sim.o"
+	@echo "... src/group_discussion_t265_no1_sim.i"
+	@echo "... src/group_discussion_t265_no1_sim.s"
+	@echo "... src/group_discussion_t265_no2_sim.o"
+	@echo "... src/group_discussion_t265_no2_sim.i"
+	@echo "... src/group_discussion_t265_no2_sim.s"
+	@echo "... src/group_discussion_trans_all_sim.o"
+	@echo "... src/group_discussion_trans_all_sim.i"
+	@echo "... src/group_discussion_trans_all_sim.s"
 .PHONY : help
 
 

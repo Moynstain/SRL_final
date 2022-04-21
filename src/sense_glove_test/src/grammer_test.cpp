@@ -176,19 +176,21 @@ int main(){
     cout << "++++++++Random Quat+++++++++\n";
     for (int i = 1; i <= 20; i++) {
         auto quat_random = Eigen::Quaterniond::UnitRandom();
-        Eigen::Matrix3d rot_random = quat_random.toRotationMatrix();
-        cout << rot_random << endl << endl;
-        srand((unsigned) time(NULL));
-        auto distance = rand();
-        cout << distance << endl;
+        // Eigen::Matrix3d rot_random = quat_random.toRotationMatrix();
+        Eigen::Matrix3d rot_1 = quat_random.toRotationMatrix();
+        auto test = rot_1;
+        Eigen::Matrix4d trans_1;
+        trans_1 << rot_1(0, 0), rot_1(0, 1), rot_1(0, 2), quat_random.x(),
+                rot_1(1, 0), rot_1(1, 1), rot_1(1, 2), quat_random.y(),
+                rot_1(2, 0), rot_1(2, 1), rot_1(2, 2), 666,
+                1, 1, 1, 1;
+        cout << trans_1 << endl;
+        auto matrix_temp = trans_1.inverse();
+        // matrix_temp(2, 3) = 100;
+        auto value = matrix_temp(2, 3) - 30;
+        cout << matrix_temp(2, 3) - 30 << endl;
+        cout << matrix_temp << endl << endl;
     }
-    srand((unsigned) time(NULL));
-    auto distance1 = rand();
-    cout << distance1 << endl;
-    auto distance2 = rand();
-    auto distance3 = rand();
-    cout << distance2 << endl;
-    cout << distance3 << endl;
 
     cout << "++++++++++\n";
     constexpr int MIN = 100;
